@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/ddabberu/helm-repos/releases/download/helm-test-chart-0.1.0/helm-test-chart-0.1.0.tgz
     version: 0.1.0
+  nginx-test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-19T22:43:35.549933414Z"
+    description: A Helm chart for Kubernetes
+    digest: 358c07a8667e76513ef5ae191726f276c5fe5c642ca4b7e869658db2fb623afc
+    name: nginx-test
+    type: application
+    urls:
+    - https://github.com/ddabberu/helm-repos/releases/download/nginx-test-0.1.0/nginx-test-0.1.0.tgz
+    version: 0.1.0
 generated: "2021-12-19T21:40:29.885834499Z"
