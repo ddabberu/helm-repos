@@ -1,0 +1,12 @@
+  566  helm package helm-test-chart
+  567  aws ecr-public create-repository      --repository-name helm-test-chart      --region us-east-1
+  568  aws ecr-public get-login-password      --region us-east-1 | helm registry login      --username AWS      --password-stdin public.ecr.aws
+  569  helm push helm-test-chart-0.1.0.tgz oci://public.ecr.aws/r2m7p7n2
+  570  aws ecr-public describe-images      --repository-name helm-test-chart      --region us-east-1
+  594  git clone https://github.com/ddabberu/helm-repos.git
+
+  helm repo index charts --url https://ddabberu.github.io/helm-repos/
+  
+  711  helm repo add brigade https://brigadecore.github.io/charts
+  712  helm search repo brigade
+  748  helm create nginx-test
