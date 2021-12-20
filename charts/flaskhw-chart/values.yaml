@@ -82,4 +82,3 @@ nodeSelector:
 tolerations: []
 
 affinity: {}
-#actions
